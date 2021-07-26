@@ -1,6 +1,6 @@
 # DCOM_Bingo
 
-Bongo card generator that uses a list of defined options to generate random bingo cards. Originally designed to be used for Disney Channel Original Movies.
+Bingo card generator that uses a list of defined options to generate random bingo cards. Originally designed to be used for Disney Channel Original Movies.
 
 My buddy Wayne and I decided to watch every Disney Channel Original Movie together and rank them. Rather than letting all of that information go to waste, we decided to make a BINGO game out of it with the goal of watching the last half of the movies with a bit more fun. We also think this would be a great way to get other people involved and spread our love of DCOMS. While this BINGO card generator can be easily adapted for literally any other type of bingo system, I would highly recommend watching a DCOM and playing along. I'll add more to this later with instructions. 
 
