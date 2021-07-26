@@ -1,0 +1,2 @@
+imgkit==1.2.2
+webkit2png==0.8.2

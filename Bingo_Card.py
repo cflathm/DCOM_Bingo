@@ -11,11 +11,11 @@ html_start = '<html lang="en"><head><link rel="stylesheet" href="Bingo_Card.css"
 html_end = '</table></body></html>'
 #Parser for the optional filname or whether or not to use a freespace
 parser = argparse.ArgumentParser()
-parser.add_argument('--filename', nargs='?', const="bar", default="DCOM_Bingo.txt")
-parser.add_argument('--free', nargs='?', const="bar", default=True)
-parser.add_argument('--count', nargs='?', const="bar", default=1)
-parser.add_argument('--title', nargs='?', const="bar", default="DCOM BINGO")
-parser.add_argument('--label', nargs='?', const="bar", default="DCOMS")
+parser.add_argument('--filename', nargs='?', default="DCOM_Bingo.txt")
+parser.add_argument('--free', action='store_true')
+parser.add_argument('--count', type=int, nargs='?', default=1)
+parser.add_argument('--title', nargs='?', default="DCOM BINGO")
+parser.add_argument('--label', nargs='?', default="DCOMS")
 args = parser.parse_args()
 
 #Pull lines of the input file into a list for storage
