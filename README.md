@@ -7,7 +7,7 @@ My buddy Wayne and I decided to watch every Disney Channel Original Movie togeth
 ## Requirements
 
 A requirements file is provided to help get you started with the project. This was built using python3 and some basic libraries. Before installing the pip file, make sure you have installed the dependencies for imgkit. Information on installing those dependencies can be found at the following link. 
-[https://pypi.org/project/imgkit/]{https://pypi.org/project/imgkit/}
+[https://pypi.org/project/imgkit/](https://pypi.org/project/imgkit/)
 
 Once those dependencies are taken care of, you can simply install the needed libraries using the requirements file. Make sure you are using python3 and pip3. 
 [pip install -r requirements.txt]
@@ -51,4 +51,4 @@ python Bingo_Card.py --filename=custom_file.txt --count=5
 The basic implementation of the cards is done by making an html document then rendering the document as an image. If you want to change the style of your bingo cards, you can simply change the css file that is included. at the moment, you cannot specify you won css file, and you have to modify the one in the repo. The main modifications you may want to do are to the colors used on the card. Right now, it has blue text, purple background, and yellow boxes. You can simply change those variable in the css file to change the colors. You could change other stuff as well, but I can't ensure how that will play out. You may want to change the font size in the td elements or the size of the td elements if you have different lengths of content for the boxes. Right now, the sizes chosen work best for the DCOM list chosen. 
 
 ## Check Out My DCOM Ranking
-Thanks for reading this far, and I hope you have a fun time playing bingo. If you are curious about my viewpoints of DCOMS, feel free to check out the list I made after watching them (this may still be in progress). [My DCOM Rankings]{https://boxd.it/cuNjA}
+Thanks for reading this far, and I hope you have a fun time playing bingo. If you are curious about my viewpoints of DCOMS, feel free to check out the list I made after watching them (this may still be in progress). [My DCOM Rankings](https://boxd.it/cuNjA)
