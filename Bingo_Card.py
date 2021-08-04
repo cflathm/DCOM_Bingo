@@ -44,7 +44,7 @@ for i in range(args.count):
     #Buld the topside label row for the bingo card
     card += '<table><tr>'
     for ind, c in enumerate(args.label[0:5]):
-        card += '<th id="' + 'label' + str(ind) + '">' + c + '</th>'
+        card += '<th id="' + 'label' + str(ind) + '"><div>' + c + '</div></th>'
     card += '</tr>'
 
     #Pull the values randomly for the bingo card, designate freespace if told to

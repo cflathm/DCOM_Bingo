@@ -1,11 +1,18 @@
 :root {
-    --background_color: #3D2D78;
-    --text_color:#0489BF;
-    --border_color:#F7B04B;
+    --background_color: white;
+    --text_color:black;
+    --border_color:black;
+}
+
+html *
+{
+    font-family: Georgia, serif;
 }
 
 body {
     background-color: var(--background_color);
+    padding:30pt;
+    padding-top:0pt;
 }
 
 tr {
@@ -19,7 +26,22 @@ h2 {
 
 th {
     font-size: 50px;
+    padding:10pt;
 }
+
+div {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background: #73AD21;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow: 5px 5px;
+}
+
 
 td {
     border: 4px solid var(--border_color);
