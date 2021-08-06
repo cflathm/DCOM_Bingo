@@ -3,6 +3,7 @@ from random import sample
 import imgkit
 import os
 import shutil
+import tkinter
 
 BOARD_SIZE = 5 #Make this variable one day, not super important
 CSS = "Bingo_Card.css"
