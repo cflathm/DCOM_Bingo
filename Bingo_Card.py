@@ -15,7 +15,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--filename', nargs='?', default="DCOM_Bingo.txt")
 parser.add_argument('--free', action='store_true')
 parser.add_argument('--html', action='store_true')
-parser.add_argument('--count', type=int, nargs='?', default=1)
+parser.add_argument('--count', type=int, nargs='?', default=10)
 parser.add_argument('--title', nargs='?', default="DCOM BINGO")
 parser.add_argument('--label', nargs='?', default="DCOMS")
 args = parser.parse_args()
@@ -37,6 +37,8 @@ os.makedirs(dir)
 
 #Generate the specified number of cards
 for i in range(args.count):
+    html_start = '<html lang="en"><head><link rel="stylesheet" href="Bingo_Card.css"></head><body><script>function Change(node){if (node.className==="on"){node.className="off";}else{node.className="on"} }</script>'
+    html_end = '</table></body></html>'
     #Make a new card
     card = html_start
 
@@ -46,7 +48,7 @@ for i in range(args.count):
     #Buld the topside label row for the bingo card
     card += '<table><tr>'
     for ind, c in enumerate(args.label[0:5]):
-        card += '<th id="' + 'label' + str(ind) + '"><div>' + c + '</div></th>'
+        card += '<th id="' + 'label' + str(ind) + '"><div class="top">' + c + '</div></th>'
     card += '</tr>'
 
     #Pull the values randomly for the bingo card, designate freespace if told to
@@ -70,7 +72,7 @@ for i in range(args.count):
     else:
         with open(CSS, 'r') as file:
             data = file.read().replace('\n','')
-            html_end = "<style>" + data + "</style>" + html_end
+            html_end = html_end + "<style>" + data + "</style>"
             card += html_end
             with open(dir+'/Card_' +str(i)+'.html', 'w+') as output:
                 output.write(card)
