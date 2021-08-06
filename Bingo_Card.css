@@ -4,6 +4,10 @@
     --border_color:black;
 }
 
+.on {
+    background-color: coral;
+}
+
 html *
 {
     font-family: Georgia, serif;
@@ -20,21 +24,21 @@ tr {
 }
 
 h2 {
-    font-size: 70px;
+    font-size: 40px;
     text-align: center;
 }
 
 th {
-    font-size: 50px;
-    padding:10pt;
+    font-size: 25px;
+    padding:5pt;
 }
 
 div {
     text-align: center;
     vertical-align: middle;
-    line-height: 100px;
-    height: 100px;
-    width: 100px;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
     border-radius: 100px;
     background: #73AD21;
     margin-left:auto;
@@ -45,9 +49,9 @@ div {
 
 td {
     border: 4px solid var(--border_color);
-    font-size: 30px;
-    width:200px;
-    height:200px;
+    font-size: 15px;
+    width:100px;
+    height: 100px;;
 }
 
 table {

@@ -47,6 +47,13 @@ Bingo is always more fun with friends, with the initial goal of this project all
 python Bingo_Card.py --filename=custom_file.txt --count=5
 ```
 
+### Making Interactive HTML Cards
+
+The above examples detail how to make cards that are saved as images, but this system also allows you to save your bingo cards as html files. The benefit to the html method is that the cards can actually be interactive and hosted online for others. This saves paper and simplifies a lot of stuff, but it does remove the fun of a physical bingo card. It's all up to preference for what you want to use. Style sheets are programatically added to the html files so that should work fine. To use this, simply use the **--html** tag similarly to how you would use the **-free** tag. The below is an example of how a custom card could be made into interactive html pages.
+```
+python Bingo_Card.py --filename=custom_file.txt --html
+```
+
 ## Changing card style
 The basic implementation of the cards is done by making an html document then rendering the document as an image. If you want to change the style of your bingo cards, you can simply change the css file that is included. at the moment, you cannot specify you won css file, and you have to modify the one in the repo. The main modifications you may want to do are to the colors used on the card. Right now, it has blue text, purple background, and yellow boxes. You can simply change those variable in the css file to change the colors. You could change other stuff as well, but I can't ensure how that will play out. You may want to change the font size in the td elements or the size of the td elements if you have different lengths of content for the boxes. Right now, the sizes chosen work best for the DCOM list chosen. 
 
